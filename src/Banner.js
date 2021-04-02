@@ -36,8 +36,10 @@ function Banner() {
                     {movie?.overview}
                 </h1>
             </div>
-            {/* div 2 buttons */}
-            {/* description */}
+
+            <div className="banner--fadeBottom">
+
+            </div>
         </header>
     )
 }
