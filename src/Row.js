@@ -31,7 +31,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
     const handleClick = (movie) => {
         if (trailerUrl) {
-            setTrailerUrl('');
+            setTrailerUrl("");
         } else {
             movieTrailer(movie?.name || "")
                 .then((url) => {
@@ -39,7 +39,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
                     const urlParams = new URLSearchParams(new URL(url).search);
                     console.log(urlParams)
 
-                    setTrailerUrl(urlParams.get('v'));
+                    setTrailerUrl(urlParams.get("v"));
 
 
                 }).catch((error) => console.log(error))
